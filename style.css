@@ -122,4 +122,53 @@ header + main{margin-top:18px}
   display: block;
   margin: 0 auto 1.5rem auto;
   border: 3px solid var(--accent-2);
+
+}
+.contact-details {
+  max-width: 720px;
+  margin: 0 auto;
+  animation: floatIn .6s ease both; 
+}
+
+.contact-details h3 {
+  font-size: 1.3rem;
+  color: var(--accent);
+  margin-bottom: 1.2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.8rem;
+}
+
+.contact-details ul {
+  list-style: none; /* Removes bullet points */
+  margin: 0;
+  padding: 0;
+}
+
+.contact-details li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+}
+
+.contact-details li strong {
+  color: #e6eef6; /* Main text color */
+  min-width: 90px; /* Aligns the text */
+  display: inline-block;
+}
+
+.contact-details li span {
+  color: var(--muted);
+}
+
+.contact-details li a {
+  color: var(--accent-2);
+  text-decoration: none;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.contact-details li a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
 }
